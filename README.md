@@ -11,8 +11,6 @@ http://nuget.org/List/Packages/Bootstrap.Message
 
     PM> Install-Package Bootstrap.Message
 
-![](https://raw.githubusercontent.com/jrummell/jquery-message/master/demo/screen.png)
-
 Or install with Bower:
 
 [![Bower version](https://badge.fury.io/bo/bootstrap.message.svg)](https://badge.fury.io/bo/bootstrap.message)
