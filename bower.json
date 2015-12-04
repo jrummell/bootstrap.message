@@ -12,7 +12,7 @@
     "license": "http://www.gnu.org/licenses/gpl.html",
     "repository": {
         "type": "git",
-        "url": "https://github.com/jrummell/jquery-message.git"
+        "url": "https://github.com/jrummell/bootstrap.message.git"
     },
     "keywords": [
         "bootstrap",
