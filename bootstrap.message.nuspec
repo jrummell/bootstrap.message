@@ -19,6 +19,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="..\js\bootstrap.message*.js" target="content\Scripts"/>
+    <file src="dist\js\*.js" target="content\Scripts"/>
   </files>
 </package>

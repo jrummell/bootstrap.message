@@ -6,21 +6,6 @@ Simple jQuery plugins that display info and error messages.
 
 You can install with NuGet:
 
-## jQuery UI [![jQuery UI on NuGet](https://img.shields.io/nuget/v/jQuery.UI.Message.svg)](http://nuget.org/List/Packages/jQuery.UI.Message)
-http://nuget.org/List/Packages/jQuery.UI.Message
-
-    PM> Install-Package jQuery.UI.Message
-
-## jQuery Mobile [![jQuery Mobile on NuGet](https://img.shields.io/nuget/v/jQuery.Mobile.Message.svg)](http://nuget.org/List/Packages/jQuery.Mobile.Message)
-http://nuget.org/List/Packages/jQuery.Mobile.Message
-
-    PM> Install-Package jQuery.Mobile.Message
-
-## Kendo UI [![Kendo UI on NuGet](https://img.shields.io/nuget/v/Kendo.Message.svg)](http://nuget.org/List/Packages/Kendo.Message)
-http://nuget.org/List/Packages/Kendo.Message
-
-    PM> Install-Package Kendo.Message
-
 ## bootstrap [![Bootstrap UI on NuGet](https://img.shields.io/nuget/v/Bootstrap.Message.svg)](http://nuget.org/List/Packages/Bootstrap.Message)
 http://nuget.org/List/Packages/Bootstrap.Message
 
