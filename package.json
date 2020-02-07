@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/jrummell/bootstrap.message#readme",
   "dependencies": {
-    "bootstrap": "3.3.1"
+    "bootstrap": "3.4.1"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
