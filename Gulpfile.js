@@ -1,5 +1,4 @@
 ﻿var gulp = require("gulp");
-var bower = require("gulp-bower");
 var uglify = require("gulp-uglify");
 var rename = require("gulp-rename");
 
@@ -8,10 +7,6 @@ var config = {
     src: "src/js/*.*"
 };
 
-gulp.task("restore", function () {
-    return bower();
-});
-
 gulp.task("copy", function () {
     return gulp.src(config.src)
         .pipe(gulp.dest(config.out));
@@ -19,7 +14,7 @@ gulp.task("copy", function () {
 
 gulp.task("minify", function () {
     return gulp.src(config.src)
-        .pipe(uglify({preserveComments: "license"}))
+        .pipe(uglify({ preserveComments: "license" }))
         .pipe(rename("bootstrap.message.min.js"))
         .pipe(gulp.dest(config.out));
 });

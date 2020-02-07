@@ -1,35 +1,29 @@
-/*
+/**
     Message plugin for Bootstrap
-    Copyright (c) 2014 John Rummell (jrummell.com)
-    Licensed under the GPL license (http://www.gnu.org/licenses/gpl.html)
-    Version: _VERSION_
+    @copyright 2020 John Rummell (jrummell.com)
+    @license ISC
 */
 
 //
 // create closure
 //
-(function (jQuery)
-{
+(function (jQuery) {
     //
     // plugin methods
     //
     var methods = {
-        init: function (options)
-        {
+        init: function (options) {
             options = jQuery.extend({}, jQuery.fn.message.defaults, options);
 
-            return this.each(function ()
-            {
+            return this.each(function () {
                 var $this = jQuery(this);
                 var data = $this.data("message");
 
                 // only initialize once
-                if (!data)
-                {
+                if (!data) {
                     // use given message or inner html
                     var messageText = options.message;
-                    if (messageText == null || messageText == "")
-                    {
+                    if (messageText == null || messageText == "") {
                         messageText = $this.html();
                     }
 
@@ -43,8 +37,7 @@
                     messageHtml += "<div class='row'>";
                     messageHtml += "<div class='col-md-1'><span class='glyphicon pull-left " + iconClass + "' aria-hidden='true'></span></div>";
                     messageHtml += "<div class='col-md-11 message-text'>";
-                    if (options.dismiss)
-                    {
+                    if (options.dismiss) {
                         messageHtml += "<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>";
                     }
                     messageHtml += "<p>" + messageText;
@@ -54,8 +47,7 @@
                     // set html and show the message
                     $this.html(messageHtml);
 
-                    if (options.autoShow)
-                    {
+                    if (options.autoShow) {
                         $this.show();
                     }
 
@@ -64,28 +56,22 @@
                 }
             });
         },
-        options: function (options)
-        {
-            return this.each(function ()
-            {
+        options: function (options) {
+            return this.each(function () {
                 var $this = jQuery(this);
                 var currentOptions = $this.data("message") || {};
                 options = jQuery.extend({}, currentOptions, options);
                 $this.message("destroy").message("init", options);
             });
         },
-        show: function ()
-        {
+        show: function () {
             jQuery(this).show();
         },
-        hide: function ()
-        {
+        hide: function () {
             jQuery(this).hide();
         },
-        destroy: function ()
-        {
-            return this.each(function ()
-            {
+        destroy: function () {
+            return this.each(function () {
                 var $this = jQuery(this);
                 var data = $this.data("message");
 
@@ -96,18 +82,14 @@
         }
     };
 
-    jQuery.fn.message = function (method)
-    {
-        if (methods[method])
-        {
+    jQuery.fn.message = function (method) {
+        if (methods[method]) {
             return methods[method].apply(this, Array.prototype.slice.call(arguments, 1));
         }
-        else if (typeof (method) === 'object' || !method)
-        {
+        else if (typeof (method) === 'object' || !method) {
             return methods.init.apply(this, arguments);
         }
-        else
-        {
+        else {
             jQuery.error("Method " + method + " does not exist on jQuery.message");
         }
     };
