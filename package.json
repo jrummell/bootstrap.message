@@ -10,7 +10,9 @@
   "version": "1.10.5",
   "main": "src/js/bootstrap.message.js",
   "scripts": {
-    "build": "gulp"
+    "build": "gulp",
+    "version": "npm run build && git add -A .",
+    "bump-version": "npm version patch -m \"version bump %s\""
   },
   "repository": {
     "type": "git",
