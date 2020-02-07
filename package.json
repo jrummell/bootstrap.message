@@ -1,10 +1,4 @@
 {
-  "devDependencies": {
-    "bower": "1.6.8",
-    "gulp": "^3.9.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.5.1"
-  },
   "name": "bootstrap-message",
   "description": "A simple jQuery plugin that displays info and error messages.",
   "version": "1.10.6",
@@ -29,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/jrummell/bootstrap.message/issues"
   },
-  "homepage": "https://github.com/jrummell/bootstrap.message#readme"
+  "homepage": "https://github.com/jrummell/bootstrap.message#readme",
+  "dependencies": {
+    "bootstrap": "3.3.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.1"
+  }
 }
