@@ -14,10 +14,9 @@ gulp.task("copy", function () {
 
 gulp.task("minify", function () {
     return gulp.src(config.src)
-        .pipe(uglify({ preserveComments: "license" }))
+        .pipe(uglify({ output: { comments: "some" } }))
         .pipe(rename("bootstrap.message.min.js"))
         .pipe(gulp.dest(config.out));
 });
 
-gulp.task("default", ["copy", "minify"], function () {
-});
+gulp.task("default", gulp.parallel("copy", "minify"));
