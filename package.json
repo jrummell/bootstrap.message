@@ -28,7 +28,7 @@
     "bootstrap": "3.4.1"
   },
   "devDependencies": {
-    "gulp": "4.0.2",
+    "gulp": "5.0.1",
     "gulp-rename": "2.1.0",
     "gulp-uglify": "3.0.2"
   }
