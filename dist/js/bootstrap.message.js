@@ -29,16 +29,16 @@
 
                     // info or error?
                     var messageClass = options.type == "info" ? "alert-success" : "alert-danger";
-                    var iconClass = options.type == "info" ? "glyphicon-info-sign" : "glyphicon-exclamation-sign";
+                    var iconClass = options.type == "info" ? "bi-info-circle" : "bi-exclamation-triangle";
 
                     // build message html
                     var messageHtml = "<div class='message-container'>";
                     messageHtml += "<div class='alert " + messageClass + " alert-dismissible' >";
                     messageHtml += "<div class='row'>";
-                    messageHtml += "<div class='col-md-1'><span class='glyphicon pull-left " + iconClass + "' aria-hidden='true'></span></div>";
+                    messageHtml += "<div class='col-md-1'><span class='bi float-start " + iconClass + "' aria-hidden='true'></span></div>";
                     messageHtml += "<div class='col-md-11 message-text'>";
                     if (options.dismiss) {
-                        messageHtml += "<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>";
+                        messageHtml += "<button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>";
                     }
                     messageHtml += "<p>" + messageText;
                     messageHtml += "</p>";
