@@ -81,4 +81,4 @@ All options are optional.
 
 ## Demo
 
-[Demo](http://rawgit.com/jrummell/bootstrap.message/master/demo/index.html)
+[Demo](https://htmlpreview.github.io/?https://github.com/jrummell/bootstrap.message/blob/master/demo/index.html)
